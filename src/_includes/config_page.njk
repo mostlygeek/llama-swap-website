@@ -1,0 +1,30 @@
+---
+layout: base.njk
+---
+<article class="config_page">
+  <h1>{{ title | default("title-missing") }}</h1>
+  <h2>Metadata</h2>
+
+  <table class="config_metadata">
+    <tbody>
+      <tr>
+        <th>Operating System</th>
+        <td>{{ config_metadata.os | default("undefined") }}</td>
+      </tr>
+      <tr>
+        <th>Server</th>
+        <td>{{ config_metadata.engine | default("unknown") }}</td>
+      </tr>
+      <tr>
+        <th>Architecture</th>
+        <td>{{ config_metadata.gpu | default("undefined") }}</td>
+      </tr>
+      <tr>
+        <th>Minimum VRAM</th>
+        <td>{{ config_metadata.min_vram | default("undefined") }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  {{ content | safe }}
+</article>

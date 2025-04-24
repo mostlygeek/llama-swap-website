@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer components {
+  h1 {
+    @apply text-2xl font-bold text-gray-800;
+  }
+  h2 {
+    @apply text-xl font-semibold text-gray-700;
+  }
+  h3 {
+    @apply text-lg font-medium text-gray-600;
+  }
+
+  pre {
+    @apply bg-gray-900 text-white p-2 rounded-lg overflow-auto;
+  }
+
+  table.config_metadata {
+    @apply w-full border border-gray-200 rounded-lg shadow-sm overflow-hidden;
+
+    th,
+    td {
+      @apply p-3 border-b border-gray-200;
+    }
+
+    th {
+      @apply bg-gray-50 text-gray-600 font-medium w-1/4 text-right;
+    }
+
+    td {
+      @apply text-gray-700 w-3/4; /* Wider data cells (~75% width) */
+    }
+
+    tr:last-child td {
+      @apply border-b-0; /* Remove border from last row */
+    }
+
+    tr:hover td {
+      @apply bg-gray-50;
+    }
+  }
+}

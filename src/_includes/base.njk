@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Page</title>
+    <link href="/assets/styles/index.css" rel="stylesheet" >
+    <link href="/assets/styles/prism-syntax/prism-vsc-dark-plus.css" rel="stylesheet"/>
+</head>
+<body class="min-h-screen bg-gray-50 flex flex-col">
+    <main class="flex-grow max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8 w-full">
+        <div class="bg-white rounded-lg shadow-sm p-6">
+            {{ content | safe }}
+        </div>
+    </main>
+</body>
+</html>

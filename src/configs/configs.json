@@ -1,0 +1,4 @@
+{
+    "layout": "config_page.njk",
+    "tags": "config"
+}
